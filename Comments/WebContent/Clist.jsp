@@ -34,7 +34,7 @@
 		String content = rs.getString(4);
 		String rdate = rs.getString(5);
 	%>
-		<tr><td><input type = hidden value =<%=seq%> name = num><%=seq%></td>
+		<tr><td><input type = hidden value=<%=seq%> name = num><%=seq%></td>
 			<td><%=name %></td>
 			<td><%=content %></td>
 			<td><%=rdate %></td>
