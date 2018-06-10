@@ -7,15 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form>
-<div class="container">
-<div class="row">
-	이름 : <input type="text" size="10"></input></div>
-	<div class="row">
-	비밀번호 : <input type="password" size="10"></input>
-	내용 : <input type="text" size="100"></input>
-	<input type="submit" value="작성"></input>
-</div>
+<form action="Cwrite.jsp" method="post">
+이름 : <input type="text" size="20" name="name" /><br />
+비번 : <input type="text" size="20" name="pass" /><br />
+소감 : <input type="text" size="20" name="content" /><br />
+<input type="submit" value="작성" /><br />
 </form>
 
 </body>
