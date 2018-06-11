@@ -98,7 +98,7 @@
 			%>
 				<tr>
 					<td><%= b.getM_number() %></td>
-					<td><a href=view.jsp?m_number=<%= b.getM_number() %>"><%= b.getM_name() %></a></td>
+					<td><a href="view.jsp?m_number=<%= b.getM_number() %>"><%= b.getM_name() %></a></td>
 					<td><%= b.getM_kind() %></td>
 					<td><%= b.getM_address() %> </td>
 					<td><%= b.getM_time() %> </td>
@@ -109,9 +109,6 @@
 				%>
 			</tbody>
 		</table>
-		<%
-		//if(ManagerID != null) 이런 유저아이디가 관리자 아이디라면 보이게
-		%>
 		<a href="write.jsp" class="btn btn-primary pull-right">글쓰기</a>
 	</div>
 </div>

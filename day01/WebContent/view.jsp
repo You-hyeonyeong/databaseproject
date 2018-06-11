@@ -12,12 +12,13 @@
 <title>FIND EAT</title>
 </head>
 <body>
+
 	<%
 	String userID = null;
 	if(session.getAttribute("userID")!= null){
 		userID = (String) session.getAttribute("userID");
 	}
-	 
+	//System.out.println("값은 넘어가는거네ss"+ m_number);
 	int m_number = 0;
 	if (request.getParameter("m_number") != null) {
 		m_number = Integer.parseInt(request.getParameter("m_number"));
@@ -30,7 +31,7 @@
 		script.println("</script>");
 	}
 	Board board = new BoardDAO().getBoard(m_number);
-	
+	System.out.println("값은 넘어가는거네"+ m_number);
 	%>
 	<nav class="navbar navbar-default" name="category">
 		<div class="navbar=header">
@@ -93,7 +94,7 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td style="width: 20px;">음식점 이름</td>
+					<td style="width:max-;">음식점 이름</td>
 					<td colspan="2"><%= board.getM_name() %></td>
 				</tr>
 				<tr>
